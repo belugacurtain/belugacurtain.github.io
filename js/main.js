@@ -72,7 +72,7 @@ $(document).ready(function () {
                             trigger : $('#wrapper'),
                             start : '0% 0%',
                             end : '100% 100%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                             onUpdate : function(self) {
                                 var path = 8200 - (self.progress * 8200);
                                 $('.rowgroup1 .fix_line .fix_line_path').css({'stroke-dashoffset':''+path+'px'});
@@ -84,7 +84,7 @@ $(document).ready(function () {
                             trigger : $('#wrapper'),
                             start : '0% 0%',
                             end : '100% 100%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                         },
                         ease: "ease.in(1,0.3)",
                         yPercent : 100,
@@ -97,7 +97,7 @@ $(document).ready(function () {
                             trigger : $('#wrapper'),
                             start : '0% 0%',
                             end : '100% 100%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                         },
                         ease: "ease.in(1,0.3)",
                         yPercent : -100,
@@ -113,7 +113,7 @@ $(document).ready(function () {
                                 trigger : $('.rowgroup3'),
                                 start : '0% 0%',
                                 end : '100% 100%',
-                                scrub : 1.05,
+                                scrub : 1.01,
                                 onUpdate : function(self) {
                                     var bgPositionBottom = (1080 - (self.progress * 1080)) + 400
                                     $this.css({'background-position':'bottom -'+bgPositionBottom+'px right -800px'});
@@ -129,7 +129,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile'),
                             start : '0% 0%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                         },
                         ease: "ease.in(1,0.3)",
                         yPercent : 100
@@ -139,7 +139,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile'),
                             start : '0% 0%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                         },
                         ease: "ease.in(1,0.3)",
                         rotate : '90deg',
@@ -152,7 +152,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile'),
                             start : '5% 0%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                         },
                         ease: "ease.in(1,0.3)",
                         rotate : '90deg',
@@ -165,7 +165,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile'),
                             start : '5% 0%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                             onUpdate : function(self) {
                                 var circle = 50 - (self.progress * 50);
                                 $('.profile .profile_inner.type01 .me .me_inner .characterization').css({
@@ -181,7 +181,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile_inner.type01'),
                             start : '0% 30%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                             onUpdate : function(self) {
                                 var circle = 85 - (self.progress * 100);
                                 var hueRotate = (self.progress * 1080);
@@ -197,7 +197,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile_inner.type01'),
                             start : '20% 0%',
                             end : '100% 0%',
-                            scrub : 1.05
+                            scrub : 1.01
                         },
                         ease : 'expo.out',
                         right : '120%'
@@ -207,7 +207,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile_inner.type01'),
                             start : '40% 0%',
                             end : '100% 0%',
-                            scrub : 1.05
+                            scrub : 1.01
                         },
                         ease : 'expo.out',
                         right : '118%'
@@ -217,7 +217,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile_inner.type01'),
                             start : '60% 0%',
                             end : '100% 0%',
-                            scrub : 1.05
+                            scrub : 1.01
                         },
                         ease : 'expo.out',
                         right : '116%'
@@ -227,7 +227,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup2 .profile_inner.type01'),
                             start : '80% 0%',
                             end : '100% 0%',
-                            scrub : 1.05
+                            scrub : 1.01
                         },
                         ease : 'expo.out',
                         right : '114%'
@@ -241,7 +241,7 @@ $(document).ready(function () {
                             start : '0% 10%',
                             end : '100% 0%',
                             toggleClass : { targets:'html', className:'rowgroup3_on'},
-                            scrub : 1.05
+                            scrub : 1.01
                         }
                     });
                     gsap.to($('.rowgroup3 .project .project_inner.type01'), {
@@ -249,7 +249,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup3 .project .project_inner.type02'),
                             start : '0% 0%',
                             end : '100% 0%',
-                            scrub : 1.05,
+                            scrub : 1.01,
                             onUpdate : function(self) {
                                 var circle = 130 - (self.progress * 100);
                                 $('.rowgroup3 .project .project_inner.type01').css({
@@ -266,7 +266,7 @@ $(document).ready(function () {
                             trigger : $('.rowgroup3 .project .project_inner.type02'),
                             start : '0% 0%',
                             end : '100% 0%',
-                            scrub : 1.05
+                            scrub : 1.01
                         },
                         rotate : '90deg'
                     });
@@ -281,8 +281,7 @@ $(document).ready(function () {
                                 scrub : 1.2
                             },
                             ease : 'ease.out',
-                            opacity : 0,
-                            xPercent : 10
+                            opacity : 0
                         });
                     });
                     var $infoItem = $('.rowgroup3 .project .project_inner.type02 .info_box .info_box_inner .info_list .info_item');
@@ -296,7 +295,7 @@ $(document).ready(function () {
                                 scrub : 1.2
                             },
                             ease : 'ease.out',
-                            yPercent : 500
+                            yPercent : 100
                         });
 
                         var clamp = gsap.utils.clamp(-20, 20);
@@ -330,7 +329,7 @@ $(document).ready(function () {
                             start : '0% 1%',
                             end : '100% 0%',
                             toggleClass : { targets:'html', className:'rowgroup4_on'},
-                            scrub : 1.05
+                            scrub : 1.01
                         }
                     });
                     //rowgroup4 ele end
